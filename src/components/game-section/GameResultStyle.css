@@ -1,0 +1,16 @@
+p {
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.game-result-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.result-text {
+    font-size: xx-large;
+}

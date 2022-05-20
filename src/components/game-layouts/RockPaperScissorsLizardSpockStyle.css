@@ -1,0 +1,64 @@
+:root {
+    --rpsls-bg-size: 25rem;
+    --top-row-vertical-adjustment: 2rem;
+    --mid-row-vertical-adjustment: 2rem;
+    --bottom-row-vertical-adjustment: 3rem;
+    --mid-option-space: 7rem;
+    --bottom-option-space: 3rem;
+}
+
+@media screen and (max-width: 420px) {
+    :root {
+        --rpsls-bg-size: 15rem;
+        --top-row-vertical-adjustment: 0rem;
+        --mid-row-vertical-adjustment: 1rem;
+        --bottom-row-vertical-adjustment: 1rem;
+        --mid-option-space: 4rem;
+        --bottom-option-space: 1rem;
+    }
+
+    .rpsls-container {
+        margin: 5rem 0 !important;
+    }
+}
+
+.rpsls-container {
+    background-image: url('../../assets/images/bg-pentagon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: var(--rpsls-bg-size);
+}
+
+.rpsls-top-row {
+    display: flex;
+    justify-content: center;
+    bottom: var(--top-row-vertical-adjustment)
+}
+
+.rpsls-mid-row {
+    display: flex;
+    justify-content: center;
+    bottom: var(--mid-row-vertical-adjustment)
+}
+
+.rpsls-bottom-row {
+    display: flex;
+    justify-content: center;
+    top: var(--bottom-row-vertical-adjustment)
+}
+
+.rpsls-mid-left-option {
+    right: var(--mid-option-space);
+}
+
+.rpsls-mid-right-option {
+    left: var(--mid-option-space);
+}
+
+.rpsls-bottom-left-option {
+    right: var(--bottom-option-space);
+}
+
+.rpsls-bottom-right-option {
+    left: var(--bottom-option-space);
+}
